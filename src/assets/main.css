@@ -7,8 +7,26 @@
   font-weight: normal;
 }
 
-a,
-.green {
+h1, h2, h3, h4, h5, p, ul {
+  color: white;
+}
+.template {
+  display: flex;
+}
+
+.detailInformation {
+  padding: 1rem;
+}
+
+.generalInformation {
+  width: 25%;
+  min-width: 250px;
+  background-color: var(--color-background-soft, #f5f5f5);
+  overflow-y: auto;
+  border-right: 1px solid var(--color-border);
+}
+
+a, .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
@@ -28,7 +46,7 @@ a,
   }
 
   #app {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }

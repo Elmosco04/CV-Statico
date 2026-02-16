@@ -1,85 +1,54 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import GeneralInformation from './views/GeneralInformation.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="template">
+  <aside class="generalInformation">
+      
+    <GeneralInformation />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <!-- Navigazione -->
+    <nav class="sidebar-nav">
+      <RouterLink to="/">Lavoro</RouterLink>
+      <RouterLink to="/attività">Attività</RouterLink>
+    </nav>
+  </aside>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <main class="Dettaglio">
+      <RouterView />
+  </main>
+</div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
+/* Navigazione Sidebar */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
 }
 
-nav a.router-link-exact-active {
+.sidebar-nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
   color: var(--color-text);
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.sidebar-nav a:hover {
+  background-color: var(--color-background);
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.sidebar-nav a.router-link-exact-active {
+  background-color: var(--vt-c-indigo);
+  color: white;
+  font-weight: 600;
 }
 </style>
