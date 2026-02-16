@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/CV-Statico/',
+  base: 'elmosco04.github.io/CV-Statico/',
   plugins: [
     vue(),
     vueDevTools(),
