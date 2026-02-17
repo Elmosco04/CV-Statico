@@ -68,16 +68,3 @@
         </section>
     </div>
 </template>
-
-<style scoped>
-/* Layout tabella */
-table {
-    color: white;
-    border-collapse: collapse;
-}
-th, td {
-    border: 1px solid white;
-    padding: 8px;
-    text-align: left;
-}
-</style>

@@ -7,9 +7,12 @@
   font-weight: normal;
 }
 
+/* Generale */
 h1, h2, h3, h4, h5, p, ul {
   color: white;
 }
+
+/* Classi generali  */
 .template {
   display: flex;
 }
@@ -31,6 +34,17 @@ a, .green {
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
   padding: 3px;
+}
+
+/* Layout tabella */
+table {
+    color: white;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
 }
 
 @media (hover: hover) {
