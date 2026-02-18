@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Esperienze from '@/views/EsperienzeLavorative.vue'
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.url),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
