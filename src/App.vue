@@ -11,7 +11,7 @@ import GeneralInformation from './views/GeneralInformation.vue';
 
     <!-- Navigazione -->
     <nav class="sidebar-nav">
-      <RouterLink to="/">Lavoro</RouterLink>
+      <RouterLink to="/">Lavoro </RouterLink>
       <RouterLink to="/attivita">Attività</RouterLink>
     </nav>
   </aside>
