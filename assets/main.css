@@ -1,0 +1,67 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+/* Generale */
+h1, h2, h3, h4, h5, p, ul {
+  color: white;
+}
+
+/* Classi generali  */
+.template {
+  display: flex;
+}
+
+.detailInformation {
+  padding: 1rem;
+}
+
+.generalInformation {
+  width: 25%;
+  min-width: 250px;
+  background-color: var(--color-background-soft, #f5f5f5);
+  overflow-y: auto;
+  border-right: 1px solid var(--color-border);
+}
+
+a, .green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+/* Layout tabella */
+table {
+    color: white;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
