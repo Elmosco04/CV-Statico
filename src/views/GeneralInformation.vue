@@ -119,7 +119,6 @@ section h2 {
 }
 
 .info-item p {
-  color: var(--color-text-secondary, #666);
   margin: 0;
   font-size: 0.9rem;
 }
